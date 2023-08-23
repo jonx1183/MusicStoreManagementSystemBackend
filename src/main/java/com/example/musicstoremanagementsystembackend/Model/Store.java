@@ -61,4 +61,8 @@ public class Store {
   public void setZip(int zip) {
     this.zip = zip;
   }
+
+  public void setAlbums(Set<Album> albums) {
+    this.albums = albums;
+  }
 }
