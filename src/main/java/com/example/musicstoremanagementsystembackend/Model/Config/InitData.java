@@ -21,16 +21,16 @@ public class InitData implements CommandLineRunner {
 
   public void run(String... args)throws Exception{
     Store store1 = new Store();
-    store1.setName("TestStore1");
-    store1.setStreet("TestStreet1");
-    store1.setCity("TestCity1");
+    store1.setName("Store1");
+    store1.setStreet("Street1");
+    store1.setCity("City1");
     store1.setZip(1111);
     storeRepository.save(store1);
 
     Album album1 = new Album();
-    album1.setTitle("TestTitle1");
-    album1.setArtist("TestArtist1");
-    album1.setGenre("Test1");
+    album1.setTitle("Title1");
+    album1.setArtist("Artist1");
+    album1.setGenre("Genre1");
     album1.setAvailability(true);
     album1.setStore(store1);
     albumRepository.save(album1);
